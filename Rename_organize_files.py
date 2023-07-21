@@ -26,7 +26,7 @@ for file in path_files.iterdir():
         old_date = datetime.strptime(old_date,'%Y%b%d')
         date = datetime.strftime(old_date, '%Y-%m-%d')
 
-        new_name = f'{date} - {region} - {report_type}{extension}'
+        new_name = f'{region}-{report_type} - {date}{extension}'
 
         month = datetime.strftime(old_date, '%B') #separete each month
 
